@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { assetPath } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { motion } from "framer-motion";
 
@@ -13,7 +14,7 @@ export function Hero() {
             {/* Full Width Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/hero-truck-red.jpg"
+                    src={assetPath("/images/hero-truck-red.jpg")}
                     alt="New Path Logistics Red Kenworth Truck"
                     fill
                     className="object-cover object-center"

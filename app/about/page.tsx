@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/sections/PageHeader";
+import { assetPath } from "@/lib/utils";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -15,7 +16,7 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/hero-truck-red.jpg" // Swapped image to avoid repetition if PageHeader uses the other one, or just keep consistent.
+                                src={assetPath("/images/hero-truck-red.jpg")}
                                 alt="New Path Logistics Team"
                                 fill
                                 className="object-cover"

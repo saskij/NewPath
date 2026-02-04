@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Phone, Truck, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { assetPath } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Header() {
@@ -42,7 +43,7 @@ export function Header() {
                         <div className="relative translate-y-6 bg-white/95 p-3 rounded-b-xl shadow-lg border border-gray-100 transition-transform duration-500 hover:scale-105 hover:shadow-xl">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/logo.png"
+                                src={assetPath("/logo.png")}
                                 alt="New Path Logistics"
                                 className="h-20 w-auto object-contain"
                             />

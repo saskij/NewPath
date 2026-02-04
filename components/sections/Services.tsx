@@ -81,7 +81,7 @@ export function Services() {
                     >
                         <div className="absolute inset-0 m-4 rounded-xl overflow-hidden">
                             <Image
-                                src="/images/services-truck.png"
+                                src={assetPath("/images/services-truck.png")}
                                 alt="New Path Logistics Peterbilt Fleet"
                                 fill
                                 className="object-cover"

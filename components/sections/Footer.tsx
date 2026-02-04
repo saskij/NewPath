@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Truck, Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { assetPath } from "@/lib/utils";
 
 export function Footer() {
     return (
@@ -14,7 +15,7 @@ export function Footer() {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <div className="bg-white/95 p-3 rounded-xl shadow-lg border border-gray-100 inline-block hover:scale-105 hover:shadow-xl transition-all duration-300">
                                 <img
-                                    src="/logo.png"
+                                    src={assetPath("/logo.png")}
                                     alt="New Path Logistics"
                                     className="h-12 w-auto object-contain"
                                 />
