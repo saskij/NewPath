@@ -1,0 +1,41 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft Gradient for stroke variation -->
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9CA3AF" />
+      <stop offset="100%" stop-color="#A3B18A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Layer 1: Tech Flow Lines (Logistics/Route) - Ultra Subtle -->
+  <g stroke="url(#strokeGrad)" stroke-width="1" fill="none" opacity="0.04" stroke-dasharray="4,6">
+    <path d="M -50 450 Q 200 400 400 450 T 850 400" />
+    <path d="M -50 150 Q 300 100 500 150 T 850 100" />
+    <path d="M 100 650 L 700 -50" stroke-dasharray="0" opacity="0.03" /> <!-- Diagonal fast lane -->
+  </g>
+
+  <!-- Layer 2: Organic Topography (Nature/Relief) - Watermark -->
+  <g stroke="#A3B18A" stroke-width="0.8" fill="none" opacity="0.05">
+    <!-- Smooth contour lines -->
+    <path d="M 600 600 C 550 500, 750 450, 700 350 S 500 300, 600 200" />
+    <path d="M 620 600 C 580 520, 730 480, 680 400" />
+    <path d="M 0 300 C 100 280, 150 350, 250 320 S 400 350, 500 300" />
+    <path d="M 20 280 C 110 270, 140 330, 230 310" />
+  </g>
+
+  <!-- Layer 3: Accent Geometry (Modern Nodes) -->
+  <g fill="#9CA3AF" opacity="0.04">
+    <circle cx="400" cy="450" r="3" />
+    <circle cx="250" cy="320" r="2" />
+    <circle cx="700" cy="350" r="4" />
+    <circle cx="150" cy="150" r="2" />
+  </g>
+
+  <!-- Layer 4: Forest Hint (Corner Watermark) - Eco Identity -->
+  <g stroke="#3A5A40" stroke-width="1" fill="none" opacity="0.03">
+     <!-- Abstract Tree Triangular Forms -->
+     <path d="M 50 550 L 60 520 L 70 550 Z" />
+     <path d="M 70 560 L 85 510 L 100 560 Z" />
+     <path d="M 25 570 L 40 540 L 55 570 Z" />
+  </g>
+</svg>
