@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { ServiceCard } from "@/components/modules/ServiceCard";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { motion } from "framer-motion";
+import { assetPath } from "@/lib/utils";
 
 export function Services() {
     const services = [
