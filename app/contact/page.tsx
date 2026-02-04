@@ -24,7 +24,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-bold text-secondary mb-1">Phone</h4>
-                                        <p className="text-gray-600">(800) 123-4567</p>
+                                        <a href="tel:+18001234567" className="text-gray-600 hover:text-primary transition-colors">(800) 123-4567</a>
                                         <p className="text-sm text-gray-500">Mon-Fri 8am-8pm EST</p>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-bold text-secondary mb-1">Email</h4>
-                                        <p className="text-gray-600">quotes@newpathlogistics.com</p>
+                                        <a href="mailto:quotes@newpathlogistics.com" className="text-gray-600 hover:text-primary transition-colors">quotes@newpathlogistics.com</a>
                                         <p className="text-sm text-gray-500">We respond within 24 hours</p>
                                     </div>
                                 </div>

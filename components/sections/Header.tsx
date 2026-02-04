@@ -69,7 +69,7 @@ export function Header() {
                             <div className="bg-gray-100 p-2 rounded-full">
                                 <Phone className="h-4 w-4 text-primary" />
                             </div>
-                            <span>(800) 123-4567</span>
+                            <a href="tel:+18001234567" className="hover:text-primary transition-colors">(800) 123-4567</a>
                         </div>
                         <Link href="/careers">
                             <Button variant="outline">Driver Application</Button>
@@ -127,7 +127,7 @@ export function Header() {
                             <div className="pt-6 border-t border-gray-100 flex flex-col gap-6">
                                 <div className="flex items-center gap-2 text-secondary font-medium">
                                     <Phone className="h-4 w-4 text-primary" />
-                                    <span>(800) 123-4567</span>
+                                    <a href="tel:+18001234567" className="hover:text-primary transition-colors">(800) 123-4567</a>
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <Link href="/careers" onClick={() => setIsOpen(false)}>
