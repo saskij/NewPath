@@ -82,8 +82,8 @@ export function Services() {
                     >
                         <div className="absolute inset-0 m-4 rounded-xl overflow-hidden">
                             <Image
-                                src={assetPath("/images/services-truck.png")}
-                                alt="New Path Logistics Peterbilt Fleet"
+                                src={assetPath("/images/services-truck-professional.png")}
+                                alt="New Path Logistics Professional Fleet"
                                 fill
                                 className="object-cover"
                                 unoptimized

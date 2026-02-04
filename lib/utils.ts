@@ -7,9 +7,10 @@ export function cn(...inputs: ClassValue[]) {
 
 /**
  * Helper function to handle asset paths with basePath for GitHub Pages
+ * Always uses basePath to match next.config.ts configuration
  */
 export function assetPath(path: string): string {
-    const basePath = process.env.NODE_ENV === 'production' ? '/NewPath' : '';
+    const basePath = '/NewPath';
     return `${basePath}${path}`;
 }
 
