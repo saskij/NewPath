@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { assetPath } from "@/lib/utils";
@@ -11,16 +11,24 @@ export function Hero() {
     return (
         <section className="relative h-[700px] lg:h-[85vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden">
 
-            {/* Full Width Background Image */}
+            {/* Full Width Background Video */}
             <div className="absolute inset-0 z-0">
-                <Image
-                    src={assetPath("/images/hero-truck-red.jpg")}
-                    alt="New Path Logistics Red Kenworth Truck"
-                    fill
-                    className="object-cover object-center"
-                    priority
-                    unoptimized
-                />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    poster={assetPath("/images/hero-truck-red.jpg")}
+                    className="object-cover w-full h-full absolute inset-0 z-0"
+                >
+                    <source src={assetPath("/videos/hero-background.mp4")} type="video/mp4" />
+                </video>
+
+                {/* Fallback Image for when video doesn't load/failed - functionality handled by poster, 
+                    but keeping an Image component conditionally or just relying on poster is cleaner. 
+                    poster is sufficient for standard HTML5 video fallback until load. 
+                */}
+
                 {/* Dark Overlay for Readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent lg:to-black/30" />
             </div>
