@@ -21,7 +21,7 @@ export function Hero() {
                     poster={assetPath("/images/hero-truck-red.jpg")}
                     className="object-cover w-full h-full absolute inset-0 z-0"
                 >
-                    <source src={assetPath("/videos/hero-background.mp4")} type="video/mp4" />
+                    <source src={assetPath("/videos/Trucking_Company_Hero_Video_Generation.mp4")} type="video/mp4" />
                 </video>
 
                 {/* Fallback Image for when video doesn't load/failed - functionality handled by poster, 
