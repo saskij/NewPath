@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="flex flex-col font-sans">
             <PageHeader
                 title="About New Path"
-                description="Founded on the principles of reliability and transparency, New Path Logistics has grown from a single truck operation into a premier logistics partner."
+                description="Founded on the principles of reliability and transparency, New Path Logistics is a family-owned partner dedicated to exceptional service."
             />
 
             <section className="py-20 lg:py-32">
@@ -27,11 +27,11 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-bold text-secondary mb-6">Our Story</h2>
                             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                                 <p>
-                                    We believe that logistics is more than just moving boxes from point A to point B. It's about keeping promises, ensuring safety, and driving the economy forward. Our team of dedicated drivers and logistics experts work around the clock to ensure your supply chain never stops.
+                                    As a family-owned business, we believe that logistics is about more than just moving freight—it's about building relationships. When you call us, you speak to a person, not a machine. We take pride in knowing our customers by name and treating every shipment with the care it deserves.
                                 </p>
                                 <div className="bg-gray-50 border-l-4 border-primary p-6 mt-8 rounded-r-lg">
                                     <p className="font-medium text-secondary italic">
-                                        "Our mission is to redefine the standard of freight transport through innovation, integrity, and verified excellence."
+                                        "Our mission is simple: to be the partner you can trust, providing the personal service and reliability that only a family business can offer."
                                     </p>
                                 </div>
                             </div>

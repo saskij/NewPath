@@ -25,28 +25,34 @@ export function Header() {
 
     const navLinks = [
         { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
         { name: "Services", href: "/services" },
-        { name: "About Us", href: "/about" },
-        { name: "Careers", href: "/careers" },
+        { name: "Equipment", href: "/equipment" },
+        { name: "Safety", href: "/safety" },
+        { name: "Careers", href: "/join-our-team" },
         { name: "Contact", href: "/contact" },
     ];
 
     return (
         <>
-            <header className={`sticky top-0 w-full transition-all duration-200 ${isOpen ? 'hidden lg:flex lg:z-50' : 'z-50 border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60'}`}>
+            <header className={`sticky top-0 w-full transition-all duration-200 ${isOpen ? 'hidden lg:flex lg:z-50' : 'z-50 bg-white border-b border-gray-200'}`}>
                 <Container className="flex h-20 items-center justify-between">
                     {/* Logo */}
                     <Link
                         href="/"
                         className={`items-center group relative z-50 ${isOpen ? 'hidden' : 'flex'}`}
                     >
-                        <div className="relative translate-y-6 bg-white/95 p-3 rounded-b-xl shadow-lg border border-gray-100 transition-transform duration-500 hover:scale-105 hover:shadow-xl">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src={assetPath("/logo.png")}
-                                alt="New Path Logistics"
-                                className="h-20 w-auto object-contain"
-                            />
+                        <div className="relative">
+                            <div className="absolute top-0 left-0 bg-white shadow-md rounded-b-xl px-4 pb-4 pt-2 -mt-2 h-32 flex items-center justify-center">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img
+                                    src={assetPath("/logo.png")}
+                                    alt="New Path Logistics"
+                                    className="h-24 w-auto object-contain drop-shadow-sm transition-transform duration-300 hover:scale-105"
+                                />
+                            </div>
+                            {/* Placeholder to keep layout spacing if needed, though absolute handles it */}
+                            <div className="w-40 h-20 opacity-0 pointer-events-none"></div>
                         </div>
                     </Link>
 
@@ -64,17 +70,14 @@ export function Header() {
                     </nav>
 
                     {/* Right Side Actions (Desktop) */}
-                    <div className="hidden lg:flex items-center gap-4">
+                    <div className="hidden lg:flex items-center gap-2">
                         <div className="flex items-center gap-2 text-secondary font-medium">
-                            <div className="bg-gray-100 p-2 rounded-full">
-                                <Phone className="h-4 w-4 text-primary" />
-                            </div>
-                            <a href="tel:+18001234567" className="hover:text-primary transition-colors">(800) 123-4567</a>
+                            <Phone className="h-4 w-4 text-primary" />
+                            <a href="tel:+18001234567" className="hover:text-primary transition-colors">1-800-123-4567</a>
                         </div>
-                        <Link href="/careers">
-                            <Button variant="outline">Driver Application</Button>
+                        <Link href="/contact">
+                            <Button variant="primary" className="bg-primary hover:bg-primary/90">GET A QUOTE</Button>
                         </Link>
-                        <Button variant="primary">Get a Quote</Button>
                     </div>
 
                     {/* Mobile Menu Toggle - Only show when menu is closed */}
@@ -127,13 +130,10 @@ export function Header() {
                             <div className="pt-6 border-t border-gray-100 flex flex-col gap-6">
                                 <div className="flex items-center gap-2 text-secondary font-medium">
                                     <Phone className="h-4 w-4 text-primary" />
-                                    <a href="tel:+18001234567" className="hover:text-primary transition-colors">(800) 123-4567</a>
+                                    <a href="tel:+18001234567" className="hover:text-primary transition-colors">1-800-123-4567</a>
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <Link href="/careers" onClick={() => setIsOpen(false)}>
-                                        <Button variant="outline" className="w-full justify-center">Driver Application</Button>
-                                    </Link>
-                                    <Button variant="primary" className="w-full justify-center">Get a Quote</Button>
+                                    <Button variant="primary" className="w-full justify-center bg-primary hover:bg-primary/90">GET A QUOTE</Button>
                                 </div>
                             </div>
                         </Container>

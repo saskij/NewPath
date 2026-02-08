@@ -14,7 +14,7 @@ interface PageHeaderProps {
 export function PageHeader({
     title,
     description,
-    imageSrc = assetPath("/images/new-path-truck-white.jpg")
+    imageSrc = assetPath("/images/hero.jpg")
 }: PageHeaderProps) {
     return (
         <section className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden">

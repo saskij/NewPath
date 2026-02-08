@@ -14,15 +14,13 @@ interface ServiceCardProps {
 export function ServiceCard({ title, description, imageSrc, href, className }: ServiceCardProps) {
     return (
         <div className={cn("group overflow-hidden rounded-xl bg-white transition-all hover:shadow-2xl border border-gray-100 flex flex-col h-full", className)}>
-            <div className="relative h-48 w-full overflow-hidden bg-gray-100 p-4">
-                <div className="relative h-full w-full rounded-lg overflow-hidden">
-                    <Image
-                        src={imageSrc}
-                        alt={title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                </div>
+            <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                    src={imageSrc}
+                    alt={title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
             </div>
             <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-secondary mb-3">{title}</h3>

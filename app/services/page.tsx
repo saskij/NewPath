@@ -2,20 +2,21 @@ import { Container } from "@/components/ui/Container";
 import { ServiceCard } from "@/components/modules/ServiceCard";
 import { CTASection } from "@/components/sections/CTASection";
 import { PageHeader } from "@/components/sections/PageHeader";
+import { assetPath } from "@/lib/utils";
 
 export default function ServicesPage() {
     const services = [
         {
             title: "Full Truckload (FTL)",
-            description: "Dedicated, timely transport for large shipments. We provide exclusive trailer use for maximum efficiency across North America.",
-            imageSrc: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2940&auto=format&fit=crop",
-            href: "/contact"
+            description: "Dedicated, timely transport for large shipments. We provide exclusive trailer use for maximum efficiency.",
+            imageSrc: assetPath("/images/services-truck.png"),
+            href: "/services/ftl"
         },
         {
             title: "Less Than Truckload (LTL)",
-            description: "Cost-effective shipping for smaller freight. Consolidate your cargo without compromising on speed or safety.",
-            imageSrc: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2940&auto=format&fit=crop",
-            href: "/contact"
+            description: "Cost-effective shipping for smaller freight. Consolidate your cargo without compromising on speed.",
+            imageSrc: assetPath("/images/services-truck-professional.png"),
+            href: "/services/ltl"
         },
         {
             title: "Refrigerated Transport",

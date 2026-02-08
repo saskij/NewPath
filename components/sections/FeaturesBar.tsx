@@ -1,7 +1,6 @@
 "use client";
 
 import { Clock, MapPin, ShieldCheck } from "lucide-react";
-import { FeatureItem } from "@/components/modules/FeatureItem";
 import { motion } from "framer-motion";
 
 export function FeaturesBar() {
@@ -13,8 +12,8 @@ export function FeaturesBar() {
         },
         {
             icon: MapPin,
-            title: "Nationwide Coverage",
-            description: "Extensive network across the U.S. and Canada."
+            title: "Reliable Transport",
+            description: "Safe and timely delivery across all 48 contiguous states."
         },
         {
             icon: ShieldCheck,
@@ -29,22 +28,25 @@ export function FeaturesBar() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white py-8 border-b border-gray-100 shadow-sm relative z-20 -mt-8 mx-4 lg:mx-auto max-w-7xl rounded-xl"
+            className="bg-gray-50/80 py-12 border-y border-gray-200 relative z-20"
         >
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-100 px-6">
-                {features.map((feature, index) => (
-                    <motion.div
-                        key={index}
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ type: "spring", stiffness: 300 }}
-                    >
-                        <FeatureItem
-                            icon={feature.icon}
-                            title={feature.title}
-                            description={feature.description}
-                        />
-                    </motion.div>
-                ))}
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {features.map((feature, index) => (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                            className="flex flex-col items-center text-center"
+                        >
+                            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-md mb-4">
+                                <feature.icon className="h-8 w-8" />
+                            </div>
+                            <h3 className="text-lg font-bold text-secondary mb-2">{feature.title}</h3>
+                            <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </motion.section>
     );

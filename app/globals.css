@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #3A5A40;
-  /* Forest Green from design */
+  --color-primary: #3d6b4a;
+  /* Green from screenshot buttons */
   --color-secondary: #1B263B;
   --color-accent: #A3B18A;
   /* Light sage green for accents */
