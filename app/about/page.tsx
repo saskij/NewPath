@@ -16,7 +16,7 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src={assetPath("/images/hero-truck-red.jpg")}
+                                src={assetPath("/images/new-path-truck-white.jpg")}
                                 alt="New Path Logistics Team"
                                 fill
                                 className="object-cover"

@@ -18,7 +18,7 @@ export function Hero() {
                     muted
                     loop
                     playsInline
-                    poster={assetPath("/images/hero-truck-red.jpg")}
+                    poster={assetPath("/images/new-path-truck-white.jpg")}
                     className="object-cover w-full h-full absolute inset-0 z-0"
                 >
                     <source src={assetPath("/videos/hero-video.mp4")} type="video/mp4" />
