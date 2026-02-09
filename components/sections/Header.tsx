@@ -37,32 +37,28 @@ export function Header() {
         <>
             <header className={`sticky top-0 w-full transition-all duration-200 ${isOpen ? 'hidden lg:flex lg:z-50' : 'z-50 bg-white border-b border-gray-200'}`}>
                 <Container className="flex h-20 items-center justify-between">
-                    {/* Logo */}
+                    {/* Logo - Industrial Box */}
                     <Link
                         href="/"
-                        className={`items-center group relative z-50 ${isOpen ? 'hidden' : 'flex'}`}
+                        className={`items-center group relative z-50 h-full ${isOpen ? 'hidden' : 'flex'}`}
                     >
-                        <div className="relative">
-                            <div className="absolute top-0 left-0 bg-white shadow-md rounded-b-xl px-4 pb-4 pt-2 -mt-2 h-32 flex items-center justify-center">
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img
-                                    src={assetPath("/logo.png")}
-                                    alt="New Path Logistics"
-                                    className="h-24 w-auto object-contain drop-shadow-sm transition-transform duration-300 hover:scale-105"
-                                />
-                            </div>
-                            {/* Placeholder to keep layout spacing if needed, though absolute handles it */}
-                            <div className="w-40 h-20 opacity-0 pointer-events-none"></div>
+                        <div className="relative h-full flex items-center bg-white px-8 shadow-sm border-b-4 border-primary/20 hover:border-primary transition-colors duration-300">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={assetPath("/logo.png")}
+                                alt="New Path Logistics"
+                                className="h-16 w-auto object-contain"
+                            />
                         </div>
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden lg:flex gap-8">
+                    <nav className="hidden lg:flex gap-8 items-center h-full">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+                                className="text-sm font-bold text-secondary uppercase tracking-wider hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary py-1"
                             >
                                 {link.name}
                             </Link>

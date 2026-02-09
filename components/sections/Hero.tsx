@@ -36,13 +36,13 @@ export function Hero() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="space-y-6"
                     >
-                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.05] drop-shadow-lg">
-                            Your Cargo, <br />
-                            <span className="text-primary-foreground md:text-white">Our Family's Promise</span>
+                        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] drop-shadow-2xl">
+                            Your Cargo <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Our Promise</span>
                         </h1>
 
-                        <p className="text-xl sm:text-2xl text-gray-100 max-w-2xl leading-relaxed drop-shadow-md mx-auto lg:mx-0">
-                            Reliable, personal trucking services you can trust. We treat every load like it's our own.
+                        <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl leading-relaxed font-medium uppercase tracking-wide drop-shadow-md mx-auto lg:mx-0 border-l-4 border-primary pl-6">
+                            Reliable, personal trucking services you can trust. <br />We treat every load like it's our own.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">

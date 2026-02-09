@@ -1,6 +1,10 @@
-export function TrustBar() {
+interface TrustBarProps {
+    className?: string;
+}
+
+export function TrustBar({ className }: TrustBarProps) {
     return (
-        <div className="bg-gray-50 border border-gray-200 p-6 flex flex-wrap justify-center items-center gap-6 rounded-lg">
+        <div className={`bg-gray-50 border border-gray-200 p-6 flex flex-wrap justify-center items-center gap-6 rounded-lg ${className}`}>
             <div className="flex items-center space-x-2">
                 <span className="font-bold text-gray-700 uppercase text-sm tracking-wide">USDOT#:</span>
                 <span className="font-mono font-medium text-secondary">######</span>

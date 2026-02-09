@@ -4,21 +4,21 @@ import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "inline-flex items-center justify-center whitespace-nowrap rounded-sm text-sm font-bold uppercase tracking-wider ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
     {
         variants: {
             variant: {
-                primary: "bg-primary text-white hover:bg-primary/90 shadow-md",
-                secondary: "bg-white text-secondary hover:bg-gray-100",
-                outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground border-primary text-primary hover:bg-primary/10",
+                primary: "bg-primary text-white hover:bg-primary/90 shadow-none border-2 border-transparent hover:border-primary/20",
+                secondary: "bg-secondary text-white hover:bg-secondary/90 shadow-none",
+                outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white",
                 ghost: "hover:bg-accent hover:text-accent-foreground",
                 link: "text-primary underline-offset-4 hover:underline",
             },
             size: {
-                default: "h-10 px-4 py-2",
-                sm: "h-9 rounded-md px-3",
-                lg: "h-11 rounded-md px-8 text-base",
-                icon: "h-10 w-10",
+                default: "h-12 px-8 py-3",
+                sm: "h-10 rounded-sm px-4",
+                lg: "h-14 rounded-sm px-10 text-base",
+                icon: "h-12 w-12",
             },
         },
         defaultVariants: {

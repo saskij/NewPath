@@ -27,7 +27,7 @@ body {
     /* Layer 1: Safe Zone Vignette (Stronger fade under content) */
     radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.95) 10%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.4) 100%),
     /* Layer 2: The Premium Pattern (Nature + Tech) */
-    url('/images/bg-premium.svg'),
+    url('/NewPath/images/bg-premium.svg'),
     /* Layer 3: Base Gradient (Cool Gray to Sage - very subtle) */
     linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 50%, #eff2f0 100%);
 
@@ -38,6 +38,23 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-secondary);
+  /* Text defaults to dark navy */
+}
+
+/* Industrial Typography Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  /* Broad/Black */
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  /* tight */
+  line-height: 1.1;
 }
 
 /* Utilities for sections */

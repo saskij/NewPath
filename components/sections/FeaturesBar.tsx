@@ -35,15 +35,15 @@ export function FeaturesBar() {
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
-                            whileHover={{ scale: 1.02 }}
+                            whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 300 }}
-                            className="flex flex-col items-center text-center"
+                            className="flex flex-col items-center text-center group"
                         >
-                            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-md mb-4">
-                                <feature.icon className="h-8 w-8" />
+                            <div className="flex h-20 w-20 shrink-0 items-center justify-center bg-white border-4 border-primary text-primary shadow-sm mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <feature.icon className="h-10 w-10" />
                             </div>
-                            <h3 className="text-lg font-bold text-secondary mb-2">{feature.title}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
+                            <h3 className="text-xl font-black text-secondary uppercase tracking-wider mb-3">{feature.title}</h3>
+                            <p className="text-base text-gray-600 font-medium leading-relaxed max-w-xs">{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>
