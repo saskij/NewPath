@@ -25,7 +25,7 @@ export function FeaturesBar() {
     return (
         <section className="relative z-30 -mt-24 pb-32 px-4">
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
@@ -33,11 +33,11 @@ export function FeaturesBar() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-white p-8 shadow-xl border-t-4 border-primary relative group"
+                            className="bg-white p-6 sm:p-8 shadow-xl border-t-4 border-primary relative group"
                         >
                             <div className="flex flex-col items-start space-y-4">
-                                <div className="p-3 bg-secondary/5 rounded-lg text-secondary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                                    <feature.icon className="h-8 w-8" />
+                                <div className="p-2 sm:p-3 bg-secondary/5 rounded-lg text-secondary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                    <feature.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                                 </div>
 
                                 <div className="space-y-2">
