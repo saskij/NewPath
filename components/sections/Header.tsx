@@ -67,12 +67,12 @@ export function Header() {
 
                     {/* Right Side Actions (Desktop) */}
                     <div className="hidden lg:flex items-center gap-2">
-                        <div className="flex items-center gap-2 text-secondary font-medium">
+                        <a href="tel:+18001234567" className="flex items-center gap-2 text-secondary font-medium hover:text-primary transition-colors">
                             <Phone className="h-4 w-4 text-primary" />
-                            <a href="tel:+18001234567" className="hover:text-primary transition-colors">1-800-123-4567</a>
-                        </div>
+                            <span>1-800-123-4567</span>
+                        </a>
                         <Link href="/contact">
-                            <Button variant="primary" className="bg-primary hover:bg-primary/90">GET A QUOTE</Button>
+                            <Button variant="secondary" className="bg-secondary text-white hover:bg-secondary/90">GET A QUOTE</Button>
                         </Link>
                     </div>
 
@@ -115,7 +115,7 @@ export function Header() {
                                     <Link
                                         key={link.name}
                                         href={link.href}
-                                        className="text-2xl font-medium text-gray-800 hover:text-primary transition-colors"
+                                        className="text-2xl font-medium text-gray-800 hover:text-primary transition-colors py-4 block"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {link.name}
@@ -124,12 +124,12 @@ export function Header() {
                             </nav>
 
                             <div className="pt-6 border-t border-gray-100 flex flex-col gap-6">
-                                <div className="flex items-center gap-2 text-secondary font-medium">
+                                <a href="tel:+18001234567" className="flex items-center gap-2 text-secondary font-medium hover:text-primary transition-colors py-2">
                                     <Phone className="h-4 w-4 text-primary" />
-                                    <a href="tel:+18001234567" className="hover:text-primary transition-colors">1-800-123-4567</a>
-                                </div>
+                                    <span>1-800-123-4567</span>
+                                </a>
                                 <div className="flex flex-col gap-3">
-                                    <Button variant="primary" className="w-full justify-center bg-primary hover:bg-primary/90">GET A QUOTE</Button>
+                                    <Button variant="secondary" className="w-full justify-center bg-secondary text-white hover:bg-secondary/90">GET A QUOTE</Button>
                                 </div>
                             </div>
                         </Container>

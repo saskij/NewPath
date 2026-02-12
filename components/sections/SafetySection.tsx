@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function SafetySection() {
     return (
-        <section className="py-24 bg-gray-900 overflow-hidden">
+        <section className="py-32 bg-gray-900 overflow-hidden">
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto lg:h-[600px]">
 

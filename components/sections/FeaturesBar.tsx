@@ -23,7 +23,7 @@ export function FeaturesBar() {
     ];
 
     return (
-        <section className="relative z-30 -mt-24 pb-20 px-4">
+        <section className="relative z-30 -mt-24 pb-32 px-4">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
@@ -44,7 +44,7 @@ export function FeaturesBar() {
                                     <h3 className="text-xl font-bold text-secondary uppercase tracking-tight">
                                         {feature.title}
                                     </h3>
-                                    <p className="text-gray-500 font-medium leading-relaxed">
+                                    <p className="text-gray-500 font-medium text-[1.1rem] leading-[1.6]">
                                         {feature.description}
                                     </p>
                                 </div>

@@ -19,7 +19,7 @@ export function ReliabilityStats() {
     ];
 
     return (
-        <section className="py-24 bg-secondary text-white overflow-hidden relative">
+        <section className="py-32 bg-secondary text-white overflow-hidden relative">
             {/* Ambient Background Glow */}
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 

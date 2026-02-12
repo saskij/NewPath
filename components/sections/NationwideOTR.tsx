@@ -9,7 +9,7 @@ import { assetPath } from "@/lib/utils";
 
 export function NationwideOTR() {
     return (
-        <section className="py-24 bg-white overflow-hidden">
+        <section className="py-32 bg-white overflow-hidden">
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -57,7 +57,7 @@ export function NationwideOTR() {
 
                         <div className="pt-4">
                             <Link href="/services">
-                                <Button variant="secondary" size="lg" className="h-14 px-8 text-base font-bold uppercase shadow-lg hover:shadow-xl transition-all duration-300">
+                                <Button variant="outline" size="lg" className="h-14 px-8 text-base font-bold uppercase shadow-lg hover:shadow-xl transition-all duration-300">
                                     See Our Lanes
                                 </Button>
                             </Link>

@@ -83,8 +83,14 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 uppercase tracking-wider font-bold">
-                    <p>&copy; {new Date().getFullYear()} NEW PATH LOGISTICS.</p>
-                    <p>All Rights Reserved.</p>
+                    <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+                        <p>&copy; {new Date().getFullYear()} NEW PATH LOGISTICS.</p>
+                        <p>MC #000000 | DOT #0000000</p>
+                    </div>
+                    <div className="flex gap-6">
+                        <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+                    </div>
                 </div>
             </Container>
         </footer>
