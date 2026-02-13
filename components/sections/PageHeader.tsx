@@ -26,6 +26,8 @@ export function PageHeader({
                     fill
                     className="object-cover object-center"
                     priority
+                    sizes="100vw"
+                    quality={85}
                 />
                 {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />

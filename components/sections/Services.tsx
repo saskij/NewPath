@@ -12,7 +12,7 @@ export function Services() {
     return (
         <section className="py-24 bg-gray-50 text-secondary relative overflow-hidden" id="services">
             {/* Background Texture/Pattern - Concrete/Industrial feel */}
-            <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url(${assetPath("/images/background-pattern.png")})` }}></div>
+            <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url(${assetPath("/images/background-pattern.jpg")})` }}></div>
 
             <Container className="relative z-10">
                 {/* Section Header - Industrial Style */}
@@ -37,7 +37,7 @@ export function Services() {
                     < Link href="/services/ftl" className="group relative block bg-white h-[500px] shadow-lg hover:shadow-2xl transition-all duration-300 border-b-8 border-primary" >
                         <div className="relative h-2/3 w-full overflow-hidden">
                             <Image
-                                src={assetPath("/images/services-truck.png")}
+                                src={assetPath("/images/services-truck.jpg")}
                                 alt="Full Truckload Services"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
@@ -66,7 +66,7 @@ export function Services() {
                     < Link href="/services/ltl" className="group relative block bg-white h-[500px] shadow-lg hover:shadow-2xl transition-all duration-300 border-b-8 border-gray-800" >
                         <div className="relative h-2/3 w-full overflow-hidden">
                             <Image
-                                src={assetPath("/images/services-truck-professional.png")}
+                                src={assetPath("/images/services-truck-professional.jpg")}
                                 alt="Less Than Truckload Services"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"

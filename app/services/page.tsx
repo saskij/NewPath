@@ -9,13 +9,13 @@ export default function ServicesPage() {
         {
             title: "Full Truckload (FTL)",
             description: "Dedicated, timely transport for large shipments. We provide exclusive trailer use for maximum efficiency.",
-            imageSrc: assetPath("/images/services-truck.png"),
+            imageSrc: assetPath("/images/services-truck.jpg"),
             href: "/services/ftl"
         },
         {
             title: "Less Than Truckload (LTL)",
             description: "Cost-effective shipping for smaller freight. Consolidate your cargo without compromising on speed.",
-            imageSrc: assetPath("/images/services-truck-professional.png"),
+            imageSrc: assetPath("/images/services-truck-professional.jpg"),
             href: "/services/ltl"
         },
         {

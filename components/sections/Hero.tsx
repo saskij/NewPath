@@ -16,11 +16,13 @@ export function Hero() {
             {/* Full Width Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src={assetPath("/images/heroю.v1.jpg")}
+                    src={assetPath("/images/hero.jpg")}
                     alt="New Path Logistics Truck"
                     fill
                     className="object-cover"
                     priority
+                    sizes="100vw"
+                    quality={85}
                 />
 
                 {/* Gradient Overlay for Text Pop */}
